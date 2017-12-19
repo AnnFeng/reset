@@ -1,0 +1,95 @@
+@mixin flex{display:-moz-box;display:-webkit-box;display:-ms-box;display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex}
+@mixin b-flex{-webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1 1 0;-moz-flex:1 1 0;-ms-flex:1 1 0;flex:1 1 0}
+@mixin clearfix{
+    zoom: 1;
+    overflow:hidden;
+    &:after,&:before{content:".";display:block;height:0;visibility:hidden}
+}
+body{
+    font-family:'PingFang-SC';
+}
+/*!reset START*/
+h3 .user,h3.title a.cart{display:inline-block;float:right}
+.brandList ul:after,.clearfix:after{clear:both}
+.hidden{display:none;}
+#slideBox1 .bd li,.classfiy_nav li a,.slideBox .bd li,body,div.searchbox,div.searchbox input{box-sizing:border-box}
+.slideBox .bd li a,a,img{-webkit-tap-highlight-color:transparent}
+.device_type a,.device_type a:hover,a,ul.selectUl li a,ul.tuiGood li a{text-decoration:none}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}
+html{line-height:1}
+body{font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif;max-width:640px;margin-left:auto;margin-right:auto;background:#f2f2f2;}
+ol,ul{list-style:none}
+table{border-collapse:collapse;border-spacing:0}
+caption,td,th{text-align:left;font-weight:400;vertical-align:middle}
+blockquote,q{quotes:none}
+blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}
+.clear:after,.clearfix:after,.clearfix:before{content:".";visibility:hidden}
+a{color:inherit;}
+a,img{border:none;display: block;width: 100%;}
+.flex{display:-moz-box;display:-webkit-box;display:-ms-box;display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex}
+.b-flex{-webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1 1 0;-moz-flex:1 1 0;-ms-flex:1 1 0;flex:1 1 0}
+/*!reset END*/
+
+.container{
+    background:#fff;
+    padding: 0 8px;
+    padding-top: 25px;
+    h3{
+        font-size:20px;
+        line-height:27px;
+        color:#333;
+        font-weight:bold;
+    }
+    .content{
+        color:#333;
+        line-height:25px;
+        font-size:15px;
+        img{
+            margin-top:15px;
+        }
+    }
+}
+.item{
+    position: relative;
+    padding-left:110px;
+    padding-right:30px;
+    background:#FAFAFA;
+    margin-top:15px;
+    margin-bottom: 15px;
+    height:100px;
+    .i-left img{
+        width:100px;
+        position: absolute;
+        left:5px;
+        top:0px;
+        margin-top:0px;
+    }
+    .i-right{
+        padding-top:19px;
+        font-size:14px;
+        line-height:18px;
+        .i-price{
+            margin-top:15px;
+            span{color:#EF3B39;margin-left:30px;font-size:15px;}
+        }
+        .i-more{
+            width:18px;
+            height: 100%;
+            display:block;
+            position: absolute;
+            right:10px;
+            top:0;
+            background:url(//i0.beta.ule.com/app/yxd/i/toutiao/i-arrow.png) no-repeat center center;
+            background-size:18px;
+        }
+    }
+}
+  .goodstore_top{margin-top:10px;margin-bottom:10px;padding:0 70px 0 64px;position:relative;background:#fff;}
+  .goodstore_top a{height:47px;width:100%}
+.goodstore_top  span.goodstore_loge{position:absolute;left:10px;top:17px;margin-right:5px;display:inline-block;width:45px;height:45px;/*!float: left;*/border:1px solid #d9d9d9;border-radius:50%;overflow:hidden}
+.goodstore_top  span.goodstore_loge img{width:100%;max-width:640px}
+.goodstore_top  .goodstore_title{text-align:left}
+.goodstore_top  .goodstore_title h3{font-size:15px;height:30px;line-height:30px;padding:0;margin:0;overflow:hidden;width:100%}
+.goodstore_top  .goodstore_btn{position:absolute;right:10px;text-align:center;top:25px;font-size:14px;width:70px;height:30px;line-height:30px;background:#fff;color:#ec3d3f;display:inline-block;border-radius:20px;border:1px solid #ec3d3f;}
+.goodstore_top  .goodstore_subtit{color:grey;font-size:12px}
+.goodstore_top  .goodstore_imglist img{width:33.3%;float:left}
